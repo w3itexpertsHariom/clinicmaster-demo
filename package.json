@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build:dentist && npm run build:medical && npm run build:skincare",
-    "build:dentist": "cd dentist   && npm ci && npm run build && npm run export && rimraf ../public/site1 && shx cp -r out ../public/site1",
-    "build:medical": "cd medical   && npm ci && npm run build && npm run export && rimraf ../public/site2 && shx cp -r out ../public/site2",
-    "build:skincare": "cd skincare && npm ci && npm run build && npm run export && rimraf ../public/site3 && shx cp -r out ../public/site3"
+    "build:dentist":  "cd dentist   && npm ci && npm run build && rimraf ../public/site1 && shx cp -r out ../public/site1",
+	"build:medical":  "cd medical   && npm ci && npm run build && rimraf ../public/site2 && shx cp -r out ../public/site2",
+	"build:skincare": "cd skincare  && npm ci && npm run build && rimraf ../public/site3 && shx cp -r out ../public/site3"
   },
   "devDependencies": {
     "rimraf": "^5.0.10",
