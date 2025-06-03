@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    
+    "export": "next export",
     "sass": "sass --watch public/assets/scss/main.scss public/assets/css/style.css"
   },
   "dependencies": {
