@@ -1,0 +1,10 @@
+{
+  "name": "clinicmaster",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build:site1 && npm run build:site2 && npm run build:site3",
+    "build:site1": "cd static-site-1 && npm install && npm run build && npm run export && rm -rf ../public/site1 && cp -r out ../public/site1",
+    "build:site2": "cd static-site-2 && npm install && npm run build && npm run export && rm -rf ../public/site2 && cp -r out ../public/site2",
+    "build:site3": "cd static-site-3 && npm install && npm run build && npm run export && rm -rf ../public/site3 && cp -r out ../public/site3"
+  }
+}
